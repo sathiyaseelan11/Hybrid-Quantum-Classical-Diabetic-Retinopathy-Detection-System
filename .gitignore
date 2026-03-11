@@ -1,0 +1,31 @@
+# Node/Next.js (Frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+npm-debug.log
+yarn-error.log
+
+# Python/FastAPI (Backend)
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+
+# Datasets
+backend/dataset/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
