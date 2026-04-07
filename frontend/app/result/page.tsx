@@ -74,7 +74,8 @@ export default function ResultPage() {
       const formData = new FormData();
       formData.append('file', blob, 'scan.png');
       
-      const response = await fetch('http://localhost:8000/report', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const response = await fetch(`${apiUrl}/report`, {
         method: 'POST',
         body: formData,
       });
